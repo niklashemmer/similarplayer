@@ -10,8 +10,8 @@ import plotly.graph_objects as go
 from control import Metrics, all, all_pp, Templates, Templates1
 
 # Read in the DataFrame
-df = pd.read_csv("/Users/niklashemmer/PycharmProjects/DashApp/data/Similar Player_22-05-11.csv")
-df_per = pd.read_csv("/Users/niklashemmer/PycharmProjects/DashApp/data/Similar Player Percentiles_22-05-11.csv")
+df = pd.read_csv("/Users/niklashemmer/PycharmProjects/SimilarPlayer_NEW/data/Similar Player_22-05-11.csv")
+df_per = pd.read_csv("/Users/niklashemmer/PycharmProjects/SimilarPlayer_NEW/data/Similar Player Percentiles_22-05-11.csv")
 df.rename(columns={"cluster_gmm_new":"Player Role"}, inplace=True)
 df.rename(columns={"PA": "PA Entry"}, inplace=True)
 df_per.rename(columns={"PA": "PA Entry"}, inplace=True)
